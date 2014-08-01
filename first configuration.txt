@@ -1,0 +1,264 @@
+Welcome to Git (version 1.9.4-preview20140611)
+
+
+Run 'git help git' to display the help index.
+Run 'git help <command>' to display help for specific commands.
+
+Usuario@USUARIO-PC /D/Projects
+$ mvn archetype:generate -DgroupId=com.jpaul.debugmaven -DartifactId=DebugMave
+-archetypeArtifactId=idontknow -DinteractiveMode=false
+Unable to parse command line options: Unrecognized option: -archetypeArtifactId=
+idontknow
+
+usage: mvn [options] [<goal(s)>] [<phase(s)>]
+
+Options:
+ -am,--also-make                        If project list is specified, also
+                                        build projects required by the
+                                        list
+ -amd,--also-make-dependents            If project list is specified, also
+                                        build projects that depend on
+                                        projects on the list
+ -B,--batch-mode                        Run in non-interactive (batch)
+                                        mode
+ -b,--builder <arg>                     The id of the build strategy to
+                                        use.
+ -C,--strict-checksums                  Fail the build if checksums don't
+                                        match
+ -c,--lax-checksums                     Warn if checksums don't match
+ -cpu,--check-plugin-updates            Ineffective, only kept for
+                                        backward compatibility
+ -D,--define <arg>                      Define a system property
+ -e,--errors                            Produce execution error messages
+ -emp,--encrypt-master-password <arg>   Encrypt master security password
+ -ep,--encrypt-password <arg>           Encrypt server password
+ -f,--file <arg>                        Force the use of an alternate POM
+                                        file (or directory with pom.xml).
+ -fae,--fail-at-end                     Only fail the build afterwards;
+                                        allow all non-impacted builds to
+                                        continue
+ -ff,--fail-fast                        Stop at first failure in
+                                        reactorized builds
+ -fn,--fail-never                       NEVER fail the build, regardless
+                                        of project result
+ -gs,--global-settings <arg>            Alternate path for the global
+                                        settings file
+ -h,--help                              Display help information
+ -l,--log-file <arg>                    Log file to where all build output
+                                        will go.
+ -llr,--legacy-local-repository         Use Maven 2 Legacy Local
+                                        Repository behaviour, ie no use of
+                                        _remote.repositories. Can also be
+                                        activated by using
+                                        -Dmaven.legacyLocalRepo=true
+ -N,--non-recursive                     Do not recurse into sub-projects
+ -npr,--no-plugin-registry              Ineffective, only kept for
+                                        backward compatibility
+ -npu,--no-plugin-updates               Ineffective, only kept for
+                                        backward compatibility
+ -nsu,--no-snapshot-updates             Suppress SNAPSHOT updates
+ -o,--offline                           Work offline
+ -P,--activate-profiles <arg>           Comma-delimited list of profiles
+                                        to activate
+ -pl,--projects <arg>                   Comma-delimited list of specified
+                                        reactor projects to build instead
+                                        of all projects. A project can be
+                                        specified by [groupId]:artifactId
+                                        or by its relative path.
+ -q,--quiet                             Quiet output - only show errors
+ -rf,--resume-from <arg>                Resume reactor from specified
+                                        project
+ -s,--settings <arg>                    Alternate path for the user
+                                        settings file
+ -T,--threads <arg>                     Thread count, for instance 2.0C
+                                        where C is core multiplied
+ -t,--toolchains <arg>                  Alternate path for the user
+                                        toolchains file
+ -U,--update-snapshots                  Forces a check for missing
+                                        releases and updated snapshots on
+                                        remote repositories
+ -up,--update-plugins                   Ineffective, only kept for
+                                        backward compatibility
+ -V,--show-version                      Display version information
+                                        WITHOUT stopping build
+ -v,--version                           Display version information
+ -X,--debug                             Produce execution debug output
+
+Usuario@USUARIO-PC /D/Projects
+$ mvn archetype:generate -DgroupId=com.jpaul.debugmaven -DartifactId=DebugMave
+ -DinteractiveMode=false
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] >>> maven-archetype-plugin:2.2:generate (default-cli) > generate-sources
+@ standalone-pom >>>
+[INFO]
+[INFO] <<< maven-archetype-plugin:2.2:generate (default-cli) < generate-sources
+@ standalone-pom <<<
+[INFO]
+[INFO] --- maven-archetype-plugin:2.2:generate (default-cli) @ standalone-pom --
+-
+[INFO] Generating project in Batch mode
+[INFO] No archetype defined. Using maven-archetype-quickstart (org.apache.maven.
+archetypes:maven-archetype-quickstart:1.0)
+[INFO] -------------------------------------------------------------------------
+---
+[INFO] Using following parameters for creating project from Old (1.x) Archetype:
+ maven-archetype-quickstart:1.0
+[INFO] -------------------------------------------------------------------------
+---
+[INFO] Parameter: basedir, Value: d:\Projects
+[INFO] Parameter: package, Value: com.jpaul.debugmaven
+[INFO] Parameter: groupId, Value: com.jpaul.debugmaven
+[INFO] Parameter: artifactId, Value: DebugMave
+[INFO] Parameter: packageName, Value: com.jpaul.debugmaven
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[INFO] project created from Old (1.x) Archetype in dir: d:\Projects\DebugMave
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11.833 s
+[INFO] Finished at: 2014-08-01T16:12:11-05:00
+[INFO] Final Memory: 14M/314M
+[INFO] ------------------------------------------------------------------------
+
+Usuario@USUARIO-PC /D/Projects
+$ mvn archetype:generate -DgroupId=com.jpaul.debugmaven -DartifactId=DebugMaven
+  -DinteractiveMode=false
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] >>> maven-archetype-plugin:2.2:generate (default-cli) > generate-sources
+@ standalone-pom >>>
+[INFO]
+[INFO] <<< maven-archetype-plugin:2.2:generate (default-cli) < generate-sources
+@ standalone-pom <<<
+[INFO]
+[INFO] --- maven-archetype-plugin:2.2:generate (default-cli) @ standalone-pom --
+-
+[INFO] Generating project in Batch mode
+[INFO] No archetype defined. Using maven-archetype-quickstart (org.apache.maven.
+archetypes:maven-archetype-quickstart:1.0)
+[INFO] -------------------------------------------------------------------------
+---
+[INFO] Using following parameters for creating project from Old (1.x) Archetype:
+ maven-archetype-quickstart:1.0
+[INFO] -------------------------------------------------------------------------
+---
+[INFO] Parameter: basedir, Value: d:\Projects
+[INFO] Parameter: package, Value: com.jpaul.debugmaven
+[INFO] Parameter: groupId, Value: com.jpaul.debugmaven
+[INFO] Parameter: artifactId, Value: DebugMaven
+[INFO] Parameter: packageName, Value: com.jpaul.debugmaven
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[INFO] project created from Old (1.x) Archetype in dir: d:\Projects\DebugMaven
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 9.869 s
+[INFO] Finished at: 2014-08-01T16:12:48-05:00
+[INFO] Final Memory: 13M/311M
+[INFO] ------------------------------------------------------------------------
+
+Usuario@USUARIO-PC /D/Projects
+$ ls
+DebugMaven  HWConnection  HWMavenConnection
+
+Usuario@USUARIO-PC /D/Projects
+$ cd DebugMaven
+
+Usuario@USUARIO-PC /D/Projects/DebugMaven
+$ ls
+DebugMaven.iml  pom.xml  src
+
+Usuario@USUARIO-PC /D/Projects/DebugMaven
+$ git init
+Initialized empty Git repository in d:/Projects/DebugMaven/.git/
+
+Usuario@USUARIO-PC /D/Projects/DebugMaven (master)
+$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+Usuario@USUARIO-PC /D/Projects/DebugMaven (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .idea/
+        DebugMaven.iml
+        pom.xml
+        src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Usuario@USUARIO-PC /D/Projects/DebugMaven (master)
+$ vi .gitignore
+
+Usuario@USUARIO-PC /D/Projects/DebugMaven (master)
+$ vi .gitignore
+
+Usuario@USUARIO-PC /D/Projects/DebugMaven (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+        pom.xml
+        src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Usuario@USUARIO-PC /D/Projects/DebugMaven (master)
+$ git add --all
+
+Usuario@USUARIO-PC /D/Projects/DebugMaven (master)
+$ git commit
+Aborting commit due to empty commit message.
+
+Usuario@USUARIO-PC /D/Projects/DebugMaven (master)
+$ git commit
+[master (root-commit) eee779e] Welcome to Git (version 1.9.4-preview20140611)
+ 4 files changed, 71 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 pom.xml
+ create mode 100644 src/main/java/com/jpaul/debugmaven/App.java
+ create mode 100644 src/test/java/com/jpaul/debugmaven/AppTest.java
+
+Usuario@USUARIO-PC /D/Projects/DebugMaven (master)
+$ git remote add origin git@github.com:pticlavilca/DebugMaven.git
+
+Usuario@USUARIO-PC /D/Projects/DebugMaven (master)
+$ git push -u origin master
+Counting objects: 17, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (17/17), 6.05 KiB | 0 bytes/s, done.
+Total 17 (delta 0), reused 0 (delta 0)
+To git@github.com:pticlavilca/DebugMaven.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+Usuario@USUARIO-PC /D/Projects/DebugMaven (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working directory clean
+
+Usuario@USUARIO-PC /D/Projects/DebugMaven (master)
+$
