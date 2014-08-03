@@ -1,0 +1,300 @@
+
+Halion@HALION-PC /D/projects/java
+$ cd DebugMaven
+
+Halion@HALION-PC /D/projects/java/DebugMaven (master)
+$ ls
+first configuration.txt  pom.xml  src
+
+Halion@HALION-PC /D/projects/java/DebugMaven (master)
+$ mvn compile
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DebugMaven 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ DebugMaven
+ ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources,
+i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory d:\projects\java\DebugMaven\src\main\
+resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ DebugMaven --
+-
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. b
+uild is platform dependent!
+[INFO] Compiling 1 source file to d:\projects\java\DebugMaven\target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.784 s
+[INFO] Finished at: 2014-08-03T01:57:18-05:00
+[INFO] Final Memory: 11M/122M
+[INFO] ------------------------------------------------------------------------
+
+Halion@HALION-PC /D/projects/java/DebugMaven (master)
+$ mvn package
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DebugMaven 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ DebugMaven
+ ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources,
+i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory d:\projects\java\DebugMaven\src\main\
+resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ DebugMaven --
+-
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ De
+bugMaven ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources,
+i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory d:\projects\java\DebugMaven\src\test\
+resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ Debug
+Maven ---
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. b
+uild is platform dependent!
+[INFO] Compiling 1 source file to d:\projects\java\DebugMaven\target\test-classe
+s
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ DebugMaven ---
+[INFO] Surefire report directory: d:\projects\java\DebugMaven\target\surefire-re
+ports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.jpaul.debugmaven.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ DebugMaven ---
+[INFO] Building jar: d:\projects\java\DebugMaven\target\DebugMaven-1.0-SNAPSHOT.
+jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.553 s
+[INFO] Finished at: 2014-08-03T01:57:27-05:00
+[INFO] Final Memory: 12M/72M
+[INFO] ------------------------------------------------------------------------
+
+Halion@HALION-PC /D/projects/java/DebugMaven (master)
+$ ls -lR
+.:
+total 9
+-rw-r--r--    1 Halion   Administ      861 Aug  3 01:57 DebugMaven.iml
+-rw-r--r--    1 Halion   Administ    11656 Aug  3 01:56 first configuration.txt
+-rw-r--r--    1 Halion   Administ      671 Aug  3 01:56 pom.xml
+drwxr-xr-x    4 Halion   Administ        0 Aug  3 01:56 src
+drwxr-xr-x    7 Halion   Administ     4096 Aug  3 01:57 target
+
+./src:
+total 0
+drwxr-xr-x    3 Halion   Administ        0 Aug  3 01:56 main
+drwxr-xr-x    3 Halion   Administ        0 Aug  3 01:56 test
+
+./src/main:
+total 0
+drwxr-xr-x    3 Halion   Administ        0 Aug  3 01:56 java
+
+./src/main/java:
+total 0
+drwxr-xr-x    1 Halion   Administ        0 Aug  3 01:56 com
+
+./src/main/java/com:
+total 0
+drwxr-xr-x    1 Halion   Administ        0 Aug  3 01:56 jpaul
+
+./src/main/java/com/jpaul:
+total 0
+drwxr-xr-x    1 Halion   Administ        0 Aug  3 01:57 debugmaven
+
+./src/main/java/com/jpaul/debugmaven:
+total 1
+-rw-r--r--    1 Halion   Administ      210 Aug  3 01:57 App.java
+
+./src/test:
+total 0
+drwxr-xr-x    3 Halion   Administ        0 Aug  3 01:56 java
+
+./src/test/java:
+total 0
+drwxr-xr-x    1 Halion   Administ        0 Aug  3 01:56 com
+
+./src/test/java/com:
+total 0
+drwxr-xr-x    1 Halion   Administ        0 Aug  3 01:56 jpaul
+
+./src/test/java/com/jpaul:
+total 0
+drwxr-xr-x    1 Halion   Administ        0 Aug  3 01:56 debugmaven
+
+./src/test/java/com/jpaul/debugmaven:
+total 1
+-rw-r--r--    1 Halion   Administ      686 Aug  3 01:56 AppTest.java
+
+./target:
+total 2
+-rw-r--r--    1 Halion   Administ     2366 Aug  3 01:57 DebugMaven-1.0-SNAPSHOT.
+jar
+drwxr-xr-x    1 Halion   Administ        0 Aug  3 01:57 classes
+drwxr-xr-x    1 Halion   Administ        0 Aug  3 01:57 maven-archiver
+drwxr-xr-x    1 Halion   Administ        0 Aug  3 01:57 surefire-reports
+drwxr-xr-x    1 Halion   Administ        0 Aug  3 01:57 test-classes
+
+./target/classes:
+total 0
+drwxr-xr-x    1 Halion   Administ        0 Aug  3 01:57 com
+
+./target/classes/com:
+total 0
+drwxr-xr-x    1 Halion   Administ        0 Aug  3 01:57 jpaul
+
+./target/classes/com/jpaul:
+total 0
+drwxr-xr-x    1 Halion   Administ        0 Aug  3 01:57 debugmaven
+
+./target/classes/com/jpaul/debugmaven:
+total 1
+-rw-r--r--    1 Halion   Administ      569 Aug  3 01:57 App.class
+
+./target/maven-archiver:
+total 1
+-rw-r--r--    1 Halion   Administ      127 Aug  3 01:57 pom.properties
+
+./target/surefire-reports:
+total 4
+-rw-r--r--    1 Halion   Administ     5221 Aug  3 01:57 TEST-com.jpaul.debugmave
+n.AppTest.xml
+-rw-r--r--    1 Halion   Administ      276 Aug  3 01:57 com.jpaul.debugmaven.App
+Test.txt
+
+./target/test-classes:
+total 0
+drwxr-xr-x    1 Halion   Administ        0 Aug  3 01:57 com
+
+./target/test-classes/com:
+total 0
+drwxr-xr-x    1 Halion   Administ        0 Aug  3 01:57 jpaul
+
+./target/test-classes/com/jpaul:
+total 0
+drwxr-xr-x    1 Halion   Administ        0 Aug  3 01:57 debugmaven
+
+./target/test-classes/com/jpaul/debugmaven:
+total 1
+-rw-r--r--    1 Halion   Administ      619 Aug  3 01:57 AppTest.class
+
+Halion@HALION-PC /D/projects/java/DebugMaven (master)
+$ find
+.
+./.git
+./.git/config
+./.git/description
+./.git/HEAD
+./.git/hooks
+./.git/hooks/applypatch-msg.sample
+./.git/hooks/commit-msg.sample
+./.git/hooks/post-commit.sample
+./.git/hooks/post-receive.sample
+./.git/hooks/post-update.sample
+./.git/hooks/pre-applypatch.sample
+./.git/hooks/pre-commit.sample
+./.git/hooks/pre-push.sample
+./.git/hooks/pre-rebase.sample
+./.git/hooks/prepare-commit-msg.sample
+./.git/hooks/update.sample
+./.git/index
+./.git/info
+./.git/info/exclude
+./.git/logs
+./.git/logs/HEAD
+./.git/logs/refs
+./.git/logs/refs/heads
+./.git/logs/refs/heads/master
+./.git/logs/refs/remotes
+./.git/logs/refs/remotes/origin
+./.git/logs/refs/remotes/origin/HEAD
+./.git/objects
+./.git/objects/info
+./.git/objects/pack
+./.git/objects/pack/pack-030051ea571211da35497c49af4cb59a409323db.idx
+./.git/objects/pack/pack-030051ea571211da35497c49af4cb59a409323db.pack
+./.git/packed-refs
+./.git/refs
+./.git/refs/heads
+./.git/refs/heads/master
+./.git/refs/remotes
+./.git/refs/remotes/origin
+./.git/refs/remotes/origin/HEAD
+./.git/refs/tags
+./.gitignore
+./.idea
+./.idea/.name
+./.idea/compiler.xml
+./.idea/copyright
+./.idea/copyright/profiles_settings.xml
+./.idea/encodings.xml
+./.idea/libraries
+./.idea/libraries/Maven__junit_junit_3_8_1.xml
+./.idea/misc.xml
+./.idea/modules.xml
+./.idea/scopes
+./.idea/scopes/scope_settings.xml
+./.idea/vcs.xml
+./.idea/workspace.xml
+./DebugMaven.iml
+./first configuration.txt
+./pom.xml
+./src
+./src/main
+./src/main/java
+./src/main/java/com
+./src/main/java/com/jpaul
+./src/main/java/com/jpaul/debugmaven
+./src/main/java/com/jpaul/debugmaven/App.java
+./src/test
+./src/test/java
+./src/test/java/com
+./src/test/java/com/jpaul
+./src/test/java/com/jpaul/debugmaven
+./src/test/java/com/jpaul/debugmaven/AppTest.java
+./target
+./target/classes
+./target/classes/com
+./target/classes/com/jpaul
+./target/classes/com/jpaul/debugmaven
+./target/classes/com/jpaul/debugmaven/App.class
+./target/DebugMaven-1.0-SNAPSHOT.jar
+./target/maven-archiver
+./target/maven-archiver/pom.properties
+./target/surefire-reports
+./target/surefire-reports/com.jpaul.debugmaven.AppTest.txt
+./target/surefire-reports/TEST-com.jpaul.debugmaven.AppTest.xml
+./target/test-classes
+./target/test-classes/com
+./target/test-classes/com/jpaul
+./target/test-classes/com/jpaul/debugmaven
+./target/test-classes/com/jpaul/debugmaven/AppTest.class
+
+Halion@HALION-PC /D/projects/java/DebugMaven (master)
+$ java -cp target/DebugMaven-1.0-SNAPSHOT.jar com/jpaul/debugmaven/App
+Hello World Debug Maven 2!
+
+Halion@HALION-PC /D/projects/java/DebugMaven (master)
+$
